@@ -384,7 +384,7 @@ const Stark = () => {
       const newData = [...data];
       for (let address of addresses) {
         address = address.trim();
-        if (address.length !== 66 && address.length !== 64) {
+        if (address.length !== 66 && address.length !== 64 && address.length !== 65) {
           notification.error({
             message: "错误",
             description: "请输入正确的stark地址(64位)",
